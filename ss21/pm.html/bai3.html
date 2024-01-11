@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showDayOfWeek() {
+            let number = parseInt(prompt("Nhập một số từ 2 đến 8:"));
+            let dayOfWeek;
+            switch (number) {
+                case 2:
+                    dayOfWeek = "Monday";
+                    break;
+                case 3:
+                    dayOfWeek = "Tuesday";
+                    break;
+                case 4:
+                    dayOfWeek = "Wednesday";
+                    break;
+                case 5:
+                    dayOfWeek = "Thursday";
+                    break;
+                case 6:
+                    dayOfWeek = "Friday";
+                    break;
+                case 7:
+                    dayOfWeek = "Saturday";
+                    break;
+                case 8:
+                    dayOfWeek = "Sunday";
+                    break;
+                default:
+                    dayOfWeek = "Không hợp lệ";
+                    break;
+            }
+
+            
+            console.log(  number ,  dayOfWeek);
+        }
+        showDayOfWeek();
+    </script>
+</body>
+</html>

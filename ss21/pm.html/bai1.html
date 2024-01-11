@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateAge() {
+            let yearOfBirth = prompt("nhap nam sinh");
+            if (!isNaN(yearOfBirth)) {
+                let currentYear = new Date().getFullYear();
+                let age = currentYear - parseInt(yearOfBirth);
+                console.log("Số tuổi của bạn là: " + age);
+            } else {
+                console.log("Giá trị không hợp lệ. Vui lòng nhập năm sinh là một số.");
+            }
+        }
+        calculateAge();
+    </script>
+</body>
+</html>

@@ -7,7 +7,12 @@
 </head>
 <body>
     <script>
-        
+        function checkNumber(){
+            let a = parseFloat(prompt("nhap vao 1 so"));
+            let ketQua = (a >= 0) ? "số dương" : "số âm";
+            console.log(ketQua);
+        }
+        checkNumber();       
     </script>
 </body>
 </html>
