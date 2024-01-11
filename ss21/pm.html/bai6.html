@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xếp loại điểm môn học</title>
+</head>
+<body>
+    <script>
+        function xepLoai() {
+            let diemToan = parseFloat(prompt("Nhập điểm môn Toán:"));
+            let diemVan = parseFloat(prompt("Nhập điểm môn Văn:"));
+            let diemAnh = parseFloat(prompt("Nhập điểm môn Anh:"));
+            let diemTrungBinh = (diemToan + diemVan + diemAnh) / 3;
+            let xepLoai;
+            if (diemTrungBinh >= 8 && diemTrungBinh <= 10) {
+                xepLoai = "Giỏi";
+            } else if (diemTrungBinh >= 6.5 && diemTrungBinh <= 7.9) {
+                xepLoai = "Khá";
+            } else if (diemTrungBinh >= 5 && diemTrungBinh <= 6.4) {
+                xepLoai = "Trung bình";
+            } else {
+                xepLoai = "Yếu";
+            }
+            console.log("Xếp loại: " + xepLoai);
+        }
+        xepLoai();
+    </script>
+</body>
+</html>
